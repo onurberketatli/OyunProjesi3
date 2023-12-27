@@ -14,7 +14,7 @@ public class camLookat : MonoBehaviour
 
     void Update()
     {
-        cameraTrans.position = new Vector3(player.position.x,player.position.y + 16 , player.position.z -15);
+        cameraTrans.position = new Vector3(player.position.x  ,player.position.y +  30 , player.position.z - 18);
         
     }
 }
