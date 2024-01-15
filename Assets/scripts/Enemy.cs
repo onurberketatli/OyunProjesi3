@@ -27,6 +27,7 @@ public class Enemy : MonoBehaviour
         {
             dead = true;
             GetComponent<Collider>().enabled = false;
+            Skor.skor++;
             //anim.SetBool("Die", true);
         }
     }
@@ -51,6 +52,7 @@ public class Enemy : MonoBehaviour
         if (!dead)
         {
             Move();
+            
         }
     }
 }
