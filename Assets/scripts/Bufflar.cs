@@ -11,11 +11,12 @@ public class Bufflar : MonoBehaviour
     void Start()
     {
          
-        buff1.color = Color.grey;
-        buff2.color = Color.grey;
-        buff3.color = Color.grey;
-        Invoke("A",3f);
-          
+        
+        //Invoke("A",3f);
+        buff1.color = Color.green;
+        buff2.color = Color.green;
+        buff3.color = Color.green;
+
     }
 
    
@@ -25,9 +26,9 @@ public class Bufflar : MonoBehaviour
     }
     public void A()
     {
-        buff1.color = Color.green;
-        buff2.color = Color.green;
-        buff3.color = Color.green;
+        buff1.color = Color.grey;
+        buff2.color = Color.grey;
+        buff3.color = Color.grey;
     }
 }
 

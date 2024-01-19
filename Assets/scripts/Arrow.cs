@@ -33,5 +33,12 @@ public class Arrow : MonoBehaviour
             // Bu nesneyi yok et
             Destroy(gameObject);
         }
+        if (collision.gameObject.CompareTag("wall"))
+        {
+            
+
+            // Bu nesneyi yok et
+            Destroy(gameObject);
+        }
     }
 }
