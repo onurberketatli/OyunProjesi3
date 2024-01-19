@@ -17,11 +17,13 @@ public class Timer : MonoBehaviour
     [SerializeField] Image cansprite;
     bool buffOpen = false;
     float timer2 = 0;
+    [SerializeField] GameObject bulluk;
 
 
     void Start()
     {
         buffPanel.SetActive(false);
+        bulluk.SetActive(false);
         
     }
 
@@ -58,6 +60,7 @@ public class Timer : MonoBehaviour
         Time.timeScale = 1f; // Oyun zamanýný durdur
         buffPanel.SetActive(false);
         moliSprite.color = Color.grey;
+        bulluk.SetActive(true);
 
 
     }
